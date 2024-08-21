@@ -1,0 +1,121 @@
+Pop Up.png
+size:1826,1640
+filter:Linear,Linear
+pma:true
+1+1/+1
+bounds:1313,155,77,79
+1+1/1+1
+bounds:783,266,462,322
+offsets:1,1,464,325
+1+1/1+1_Shadow
+bounds:755,590,487,196
+offsets:5,5,497,206
+1+1/Box
+bounds:1682,456,146,95
+rotate:90
+1+1/Coin
+bounds:2,328,779,201
+1+1/Coin1
+bounds:1686,1258,174,105
+rotate:90
+1+1/Coin2
+bounds:1642,1000,256,94
+rotate:90
+1+1/Hammer
+bounds:1634,892,106,102
+offsets:0,0,107,103
+rotate:90
+1+1/Heart
+bounds:1313,73,80,76
+offsets:0,1,82,79
+rotate:90
+1+1/One Time Offer
+bounds:1450,879,182,182
+offsets:1,1,184,184
+1+1/particle1
+bounds:946,1336,37,53
+Best Value Bundle/Best Value
+bounds:816,788,606,133
+offsets:1,1,608,135
+Best Value Bundle/Bundle2
+bounds:1738,929,327,86
+offsets:1,1,330,88
+rotate:90
+Best Value Bundle/Effect2
+bounds:755,794,45,47
+offsets:0,1,45,48
+Best Value Bundle/Effect3
+bounds:755,559,25,29
+offsets:0,1,25,30
+Best Value Bundle/Light
+bounds:1247,343,443,169
+offsets:9,0,452,174
+rotate:90
+Best Value Bundle/Red Banner 2
+bounds:985,1434,807,204
+offsets:1,1,809,206
+Best Value Bundle/Star1
+bounds:1313,236,103,105
+offsets:0,1,103,107
+Exclusive Deal/Deal
+bounds:1225,11,253,86
+offsets:1,1,255,88
+rotate:90
+Exclusive Deal/Exclusive
+bounds:816,923,632,138
+offsets:1,1,634,140
+No Ads Just fun/Blue Banner2
+bounds:985,1273,699,159
+offsets:1,1,701,161
+No Ads Just fun/Ellipse 1
+bounds:727,307,21,19
+offsets:1,1,23,21
+No Ads Just fun/NO ADS JUST FUN
+bounds:1418,189,597,66
+offsets:1,1,599,68
+rotate:90
+Starter Pack/STARTER PACK
+bounds:643,2,572,88
+Starter Pack/Starter Pack Banner
+bounds:2,1164,942,225
+offsets:2,1,946,226
+Value Bundle/Balloon_Light
+bounds:1486,52,395,174
+offsets:0,0,395,186
+rotate:90
+Value Bundle/Baloon
+bounds:816,1078,84,118
+offsets:1,1,86,120
+rotate:90
+Value Bundle/Baloons
+bounds:2,843,812,319
+offsets:1,1,814,321
+Value Bundle/Blue Banner1
+bounds:1662,34,413,142
+offsets:1,1,415,144
+rotate:90
+Value Bundle/Bundle1
+bounds:1682,604,286,85
+offsets:2,2,289,88
+rotate:90
+Value Bundle/Firework1
+bounds:2,117,723,209
+offsets:1,0,729,209
+Value Bundle/Red Banner
+bounds:946,1063,694,208
+offsets:1,1,697,210
+Value Bundle/Value
+bounds:727,92,496,172
+offsets:1,1,498,174
+Weekend Sale/Baloons2
+bounds:2,531,751,310
+offsets:1,1,753,312
+Weekend Sale/Firework
+bounds:1486,449,428,194
+rotate:90
+Weekend Sale/Red Banner 1
+bounds:2,1391,981,247
+offsets:1,1,983,251
+Weekend Sale/Weekend Sale
+bounds:2,9,639,106
+offsets:1,1,641,108

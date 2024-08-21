@@ -1,0 +1,79 @@
+<dependencies>
+  <packages>
+    <package>androidx.recyclerview:recyclerview:1.2.1</package>
+    <package>com.android.installreferrer:installreferrer:2.1</package>
+    <package>com.android.support:appcompat-v7:25.3.1</package>
+    <package>com.android.support:cardview-v7:25.3.1</package>
+    <package>com.android.support:customtabs:25.3.1</package>
+    <package>com.android.support:support-v4:25.3.1</package>
+    <package>com.applovin.mediation:bytedance-adapter:5.9.0.6.0</package>
+    <package>com.applovin.mediation:facebook-adapter:[6.17.0.0]</package>
+    <package>com.applovin.mediation:fyber-adapter:8.2.7.1</package>
+    <package>com.applovin.mediation:google-adapter:[23.1.0.0]</package>
+    <package>com.applovin.mediation:google-ad-manager-adapter:[23.1.0.0]</package>
+    <package>com.applovin.mediation:ironsource-adapter:8.1.0.0.0</package>
+    <package>com.applovin.mediation:mintegral-adapter:16.7.41.0</package>
+    <package>com.applovin.mediation:unityads-adapter:4.11.3.0</package>
+    <package>com.applovin.mediation:vungle-adapter:7.3.2.1</package>
+    <package>com.applovin:applovin-sdk:12.5.0</package>
+    <package>com.appsflyer:adrevenue:6.9.1</package>
+    <package>com.appsflyer:af-android-sdk:6.14.0</package>
+    <package>com.appsflyer:af-purchaseconnector-unity:2.0.1</package>
+    <package>com.appsflyer:purchase-connector:2.0.1</package>
+    <package>com.appsflyer:unity-adrevenue-generic-wrapper:6.9.1</package>
+    <package>com.appsflyer:unity-wrapper:6.14.3</package>
+    <package>com.facebook.android:facebook-applinks:[17.0.0,18)</package>
+    <package>com.facebook.android:facebook-core:[17.0.0,18)</package>
+    <package>com.facebook.android:facebook-gamingservices:[17.0.0,18)</package>
+    <package>com.facebook.android:facebook-login:[17.0.0,18)</package>
+    <package>com.facebook.android:facebook-share:[17.0.0,18)</package>
+    <package>com.google.android.gms:play-services-base:18.2.0</package>
+    <package>com.google.android.ump:user-messaging-platform:2.+</package>
+    <package>com.google.firebase:firebase-analytics:21.3.0</package>
+    <package>com.google.firebase:firebase-analytics-unity:11.6.0</package>
+    <package>com.google.firebase:firebase-app-unity:11.6.0</package>
+    <package>com.google.firebase:firebase-common:20.3.3</package>
+    <package>com.google.firebase:firebase-config:21.4.1</package>
+    <package>com.google.firebase:firebase-config-unity:11.6.0</package>
+    <package>com.google.firebase:firebase-crashlytics-ndk:18.4.3</package>
+    <package>com.google.firebase:firebase-crashlytics-unity:11.6.0</package>
+    <package>com.google.firebase:firebase-iid:21.1.0</package>
+    <package>com.google.firebase:firebase-installations:17.1.4</package>
+    <package>com.google.firebase:firebase-installations-unity:11.6.0</package>
+    <package>com.google.firebase:firebase-messaging:23.2.1</package>
+    <package>com.google.firebase:firebase-messaging-unity:11.6.0</package>
+    <package>com.google.flatbuffers:flatbuffers-java:1.12.0</package>
+    <package>com.parse.bolts:bolts-android:1.4.0</package>
+  </packages>
+  <files>
+    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/11.6.0/firebase-analytics-unity-11.6.0.aar</file>
+    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/11.6.0/firebase-analytics-unity-11.6.0.pom</file>
+    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/11.6.0/firebase-app-unity-11.6.0.aar</file>
+    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/11.6.0/firebase-app-unity-11.6.0.pom</file>
+    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-config-unity/11.6.0/firebase-config-unity-11.6.0.aar</file>
+    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-config-unity/11.6.0/firebase-config-unity-11.6.0.pom</file>
+    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/11.6.0/firebase-crashlytics-unity-11.6.0.aar</file>
+    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/11.6.0/firebase-crashlytics-unity-11.6.0.pom</file>
+    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-installations-unity/11.6.0/firebase-installations-unity-11.6.0.aar</file>
+    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-installations-unity/11.6.0/firebase-installations-unity-11.6.0.pom</file>
+    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-messaging-unity/11.6.0/firebase-messaging-unity-11.6.0.aar</file>
+    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-messaging-unity/11.6.0/firebase-messaging-unity-11.6.0.pom</file>
+  </files>
+  <settings>
+    <setting name="androidAbis" value="arm64-v8a,armeabi-v7a" />
+    <setting name="bundleId" value="nutsnbolts.color.jam.screw.puzzle" />
+    <setting name="explodeAars" value="True" />
+    <setting name="gradleBuildEnabled" value="True" />
+    <setting name="gradlePropertiesTemplateEnabled" value="True" />
+    <setting name="gradleTemplateEnabled" value="True" />
+    <setting name="installAndroidPackages" value="True" />
+    <setting name="localMavenRepoDir" value="Assets/GeneratedLocalRepo" />
+    <setting name="packageDir" value="Assets/Plugins/Android" />
+    <setting name="patchAndroidManifest" value="True" />
+    <setting name="patchMainTemplateGradle" value="True" />
+    <setting name="projectExportEnabled" value="False" />
+    <setting name="useFullCustomMavenRepoPathWhenExport" value="True" />
+    <setting name="useFullCustomMavenRepoPathWhenNotExport" value="False" />
+    <setting name="useJetifier" value="True" />
+  </settings>
+</dependencies>

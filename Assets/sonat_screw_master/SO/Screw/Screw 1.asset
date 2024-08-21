@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1d19dd4c760fe448a435ff43ef12e4, type: 3}
+  m_Name: Screw 1
+  m_EditorClassIdentifier: 
+  id: 1
+  infoShop:
+    price: 100
+    levelUnlock: 0
+    icon: {fileID: 21300000, guid: d2d0b489934b503428ae57618abba659, type: 3}
+  nameSkinBomb: _skin1
+  nameSkinIce: 1
+  screwSprites:
+  - headSprite: {fileID: 21300000, guid: 435bd4cad3394d34fa943ae3bae38be5, type: 3}
+    tailSprite: {fileID: 21300000, guid: 8b1c2cdc8b29be64a83de67c9b373f12, type: 3}
+    type: -1
+    color: 0
+  - headSprite: {fileID: 21300000, guid: b91f4ebfa46631a45a09fca8efa97a5f, type: 3}
+    tailSprite: {fileID: 21300000, guid: 33533e4dd0b16964aa0a34a39136b3d9, type: 3}
+    type: -1
+    color: 1
+  - headSprite: {fileID: 21300000, guid: 1f0bbcd6752521546b2088213d48de7c, type: 3}
+    tailSprite: {fileID: 21300000, guid: 65fcd79176c4f3649b3b2b156c9f9b5d, type: 3}
+    type: -1
+    color: 2
+  - headSprite: {fileID: 21300000, guid: eb5550f81fad88b4ba08d1e779dd6579, type: 3}
+    tailSprite: {fileID: 21300000, guid: af0097beb7833234c8f6acecaa0055d8, type: 3}
+    type: -1
+    color: 3
+  - headSprite: {fileID: 21300000, guid: fe66955549dd36b4eb640fc1dd583784, type: 3}
+    tailSprite: {fileID: 21300000, guid: 706bb45f0694f4248a59427de95f5599, type: 3}
+    type: -1
+    color: 4
+  - headSprite: {fileID: 21300000, guid: 2664a02e2ee219340bb7f0286a0a5716, type: 3}
+    tailSprite: {fileID: 21300000, guid: f43bdccefa1449d4cb5391578301cd0e, type: 3}
+    type: -1
+    color: 5
+  - headSprite: {fileID: 21300000, guid: 01a65bafec094c141a25009762ae3b81, type: 3}
+    tailSprite: {fileID: 21300000, guid: 99215ac6d218c024b8c31467c854bea5, type: 3}
+    type: -1
+    color: 6
+  - headSprite: {fileID: 21300000, guid: c75ae6b34b1895b4a8ed7d65d2a54b7d, type: 3}
+    tailSprite: {fileID: 21300000, guid: d8a0f878c5910d943b1563ab05c894e2, type: 3}
+    type: -1
+    color: 7
+  - headSprite: {fileID: 21300000, guid: b7f8a8d87c96b504b846f113e5c732a5, type: 3}
+    tailSprite: {fileID: 21300000, guid: 6cdd069d98fb86944b6bb91b6d608320, type: 3}
+    type: -1
+    color: 8
+  - headSprite: {fileID: 21300000, guid: a981f85612880314fa99ca5cc4af18ed, type: 3}
+    tailSprite: {fileID: 21300000, guid: 022e6cf5bc03baf409762ad9670dcae6, type: 3}
+    type: -1
+    color: 9
+  - headSprite: {fileID: 21300000, guid: d67355e9ddb3840468dd14d5db85f593, type: 3}
+    tailSprite: {fileID: 21300000, guid: 8b1c2cdc8b29be64a83de67c9b373f12, type: 3}
+    type: 0
+    color: 0
+  - headSprite: {fileID: 21300000, guid: 13bb1f6db694b644c95b0bff12e55670, type: 3}
+    tailSprite: {fileID: 21300000, guid: 33533e4dd0b16964aa0a34a39136b3d9, type: 3}
+    type: 0
+    color: 1
+  - headSprite: {fileID: 21300000, guid: 160b5369583408d4e9cc5faacc375966, type: 3}
+    tailSprite: {fileID: 21300000, guid: 65fcd79176c4f3649b3b2b156c9f9b5d, type: 3}
+    type: 0
+    color: 2
+  - headSprite: {fileID: 21300000, guid: a52b39ea4171b9944bd743c09ded6068, type: 3}
+    tailSprite: {fileID: 21300000, guid: af0097beb7833234c8f6acecaa0055d8, type: 3}
+    type: 0
+    color: 3
+  - headSprite: {fileID: 21300000, guid: 0794c97eb9e971b4f89643939dcdd6be, type: 3}
+    tailSprite: {fileID: 21300000, guid: 706bb45f0694f4248a59427de95f5599, type: 3}
+    type: 0
+    color: 4
+  - headSprite: {fileID: 21300000, guid: bf7baf2170d16254f91dd6cbf33962e3, type: 3}
+    tailSprite: {fileID: 21300000, guid: f43bdccefa1449d4cb5391578301cd0e, type: 3}
+    type: 0
+    color: 5
+  - headSprite: {fileID: 21300000, guid: bc43c86ebf0ed2d4895cfbea9e871032, type: 3}
+    tailSprite: {fileID: 21300000, guid: 99215ac6d218c024b8c31467c854bea5, type: 3}
+    type: 0
+    color: 6
+  - headSprite: {fileID: 21300000, guid: 3ba736fe6cde1274691edb838a7cd674, type: 3}
+    tailSprite: {fileID: 21300000, guid: d8a0f878c5910d943b1563ab05c894e2, type: 3}
+    type: 0
+    color: 7
+  - headSprite: {fileID: 21300000, guid: 964ce7c2ea7163549ba53a1c9a56d743, type: 3}
+    tailSprite: {fileID: 21300000, guid: 6cdd069d98fb86944b6bb91b6d608320, type: 3}
+    type: 0
+    color: 8
+  - headSprite: {fileID: 21300000, guid: bd73e63a96024724facd804ee7d3f399, type: 3}
+    tailSprite: {fileID: 21300000, guid: 022e6cf5bc03baf409762ad9670dcae6, type: 3}
+    type: 0
+    color: 9

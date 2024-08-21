@@ -1,0 +1,2 @@
+Alias: screwjam
+pass: screwjam2024

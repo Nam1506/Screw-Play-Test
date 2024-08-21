@@ -1,0 +1,24 @@
+{
+    "name": "ActionCode.SpriteAnimation.Editor",
+    "rootNamespace": "ActionCode.SpriteAnimation.Editor",
+    "references": [
+        "GUID:f3c88e63ab582d44fa53e497b36ad942"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.modules.ui",
+            "expression": "1.0.0",
+            "define": "UI_MODULE"
+        }
+    ],
+    "noEngineReferences": false
+}

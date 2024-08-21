@@ -1,0 +1,25 @@
+{
+    "name": "ActionCode.SpriteAnimation",
+    "rootNamespace": "ActionCode.SpriteAnimation",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.modules.ui",
+            "expression": "1.0.0",
+            "define": "UI_MODULE"
+        },
+        {
+            "name": "com.unity.modules.animation",
+            "expression": "1.0.0",
+            "define": "ANIMATION_MODULE"
+        }
+    ],
+    "noEngineReferences": false
+}

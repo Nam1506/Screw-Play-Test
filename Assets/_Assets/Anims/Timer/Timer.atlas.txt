@@ -1,0 +1,11 @@
+Timer.png
+size:119,102
+filter:Linear,Linear
+pma:true
+tick
+bounds:105,68,12,32
+offsets:1,1,14,35
+time
+bounds:2,2,98,101
+offsets:2,2,103,104
+rotate:90
