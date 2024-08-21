@@ -1,0 +1,12 @@
+Tut.png
+size:597,144
+filter:Linear,Linear
+pma:true
+Box_glow
+bounds:2,5,304,137
+offsets:1,1,306,139
+Nut_glow
+bounds:469,16,126,126
+offsets:2,2,130,130
+ico_Hand
+bounds:308,2,159,140

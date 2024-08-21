@@ -1,0 +1,14 @@
+Booster_icon.png
+size:433,107
+filter:Linear,Linear
+pma:true
+ico_Booster_Cube
+bounds:2,14,159,91
+offsets:1,1,161,93
+ico_Booster_Hammer
+bounds:163,4,145,101
+offsets:1,1,147,103
+ico_Booster_Hole
+bounds:310,2,103,121
+offsets:1,2,105,124
+rotate:90

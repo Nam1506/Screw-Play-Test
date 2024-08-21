@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4c032184f594a42845948e4c7a66e2, type: 3}
+  m_Name: BoosterSO
+  m_EditorClassIdentifier: 
+  boosters:
+  - type: 0
+    name: Extra Hole
+    description: Get an extra hole
+    icon: {fileID: 21300000, guid: 327b8e9dc9378d04fbd310e5bafd2e3b, type: 3}
+    bigIcon: {fileID: 21300000, guid: a2c13d1d683900b4285ee9e5d38642dc, type: 3}
+    titleIcon: {fileID: 21300000, guid: 503eeb3660978634ab996d654da78422, type: 3}
+    cost: 75
+    levelUnlock: 5
+    tutIcon: {fileID: 21300000, guid: fbc0d3b0b5fa1db44861791ad23ada17, type: 3}
+    tutRibbon: {fileID: 21300000, guid: fc07cbe1ae34c4c45bce7c83fef2787a, type: 3}
+    nameSkin: 3
+  - type: 1
+    name: Hammer
+    description: Break a glass
+    icon: {fileID: 21300000, guid: 295b790f478d0ce43896fb14997dbae7, type: 3}
+    bigIcon: {fileID: 21300000, guid: 083547f57508f9a49a5f42b7318043e6, type: 3}
+    titleIcon: {fileID: 21300000, guid: 66f527e8c5c642e4baae20fe1e40b486, type: 3}
+    cost: 115
+    levelUnlock: 10
+    tutIcon: {fileID: 21300000, guid: 1314a0ea51e53844d9217e837df1a695, type: 3}
+    tutRibbon: {fileID: 21300000, guid: 3ffe48b255920f64bba68be2412c0b09, type: 3}
+    nameSkin: 1
+  - type: 2
+    name: Double Box
+    description: Activate the next box
+    icon: {fileID: 21300000, guid: d6ff34cb017173c4ca882487e400ebeb, type: 3}
+    bigIcon: {fileID: 21300000, guid: b56439ca7f57f164fb8338c7ed3a3b8a, type: 3}
+    titleIcon: {fileID: 21300000, guid: ca9c42a9d64f9cd4bb06726e6b50cea8, type: 3}
+    cost: 95
+    levelUnlock: 15
+    tutIcon: {fileID: 21300000, guid: a0306e3cfb8c9754fb6a1e5f362c88d4, type: 3}
+    tutRibbon: {fileID: 21300000, guid: 7c46ae69627934f489ebeb6bed8f6c4f, type: 3}
+    nameSkin: 2

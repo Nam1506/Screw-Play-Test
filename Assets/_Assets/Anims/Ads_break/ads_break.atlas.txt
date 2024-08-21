@@ -1,0 +1,10 @@
+ads_break.png
+size:968,253
+filter:Linear,Linear
+pma:true
+board_AdBreak
+bounds:3,3,811,247
+offsets:1,1,813,249
+ico_hglass
+bounds:817,69,148,181
+offsets:1,1,150,183

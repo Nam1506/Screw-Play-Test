@@ -1,0 +1,16 @@
+Noads.png
+size:959,377
+filter:Linear,Linear
+pma:true
+Circle03
+bounds:713,2,116,116
+offsets:6,6,128,128
+Flare01
+bounds:713,120,244,255
+offsets:7,0,256,256
+ico_noads_Big2
+bounds:2,3,370,372
+offsets:28,42,428,455
+ico_noads_big
+bounds:374,29,346,337
+rotate:90

@@ -1,0 +1,26 @@
+Hidden.png
+size:835,346
+filter:Linear,Linear
+pma:true
+Group 4
+bounds:523,179,160,165
+offsets:1,2,162,168
+Layer 10
+bounds:523,12,160,165
+offsets:1,1,162,167
+Layer 11
+bounds:685,179,148,165
+offsets:1,2,150,168
+Layer 12
+bounds:356,11,165,164
+offsets:2,2,168,167
+Layer 8
+bounds:685,11,146,166
+offsets:1,1,148,168
+Layer 9
+bounds:356,177,165,167
+offsets:1,1,168,169
+iron_hole
+bounds:2,2,342,352
+offsets:2,1,346,355
+rotate:90

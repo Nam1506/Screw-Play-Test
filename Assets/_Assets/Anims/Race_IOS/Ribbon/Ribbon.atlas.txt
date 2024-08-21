@@ -1,0 +1,6 @@
+Ribbon.png
+size:921,193
+filter:Linear,Linear
+pma:true
+Layer 1
+bounds:2,2,917,189
