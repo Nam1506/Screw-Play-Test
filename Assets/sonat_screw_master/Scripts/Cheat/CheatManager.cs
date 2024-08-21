@@ -296,8 +296,6 @@ public class CheatManager : SingletonBase<CheatManager>
             Directory.CreateDirectory(path);
         }
 
-        PopupManager.Instance.ShowNotiAlert(folderPath);
-
         string[] files = Directory.GetFiles(folderPath);
 
         List<string> name = new();
