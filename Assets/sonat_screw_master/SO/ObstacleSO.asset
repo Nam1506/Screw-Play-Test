@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b523c0ae70c3fc94490d0a8c9cc65e5b, type: 3}
+  m_Name: ObstacleSO
+  m_EditorClassIdentifier: 
+  obstacles:
+  - icon: {fileID: 21300000, guid: 1f96eb5c7f7c5e247b4d8a7079dc0d31, type: 3}
+    type: -2
+    levelStart: 0
+    levelUnlock: 10
+  - icon: {fileID: 21300000, guid: f0093661ba89fff449acad9413e4e08f, type: 3}
+    type: 0
+    levelStart: 10
+    levelUnlock: 25
+  - icon: {fileID: 21300000, guid: 7eaa95c5bf71be04782277cfdebf8696, type: 3}
+    type: 1
+    levelStart: 25
+    levelUnlock: 40
+  - icon: {fileID: 21300000, guid: ca18907066822e74a817cd72eedfae94, type: 3}
+    type: 2
+    levelStart: 40
+    levelUnlock: 55
+  - icon: {fileID: 21300000, guid: fe407a1e76527b14eb5b127c9ae47069, type: 3}
+    type: 3
+    levelStart: 55
+    levelUnlock: 70
+  - icon: {fileID: 21300000, guid: 52e418c60b5691e478c53f365b429100, type: 3}
+    type: 6
+    levelStart: 70
+    levelUnlock: 85
+  - icon: {fileID: 21300000, guid: bcc478b23ce536141a3ed9a457dd677d, type: 3}
+    type: 5
+    levelStart: 85
+    levelUnlock: 100

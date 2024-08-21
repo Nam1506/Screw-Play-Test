@@ -1,0 +1,477 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a0a787a8f142fd46a236e0541e04c2d, type: 3}
+  m_Name: ShopPackSO
+  m_EditorClassIdentifier: 
+  packs:
+  - name: Starter Bundle
+    rewards:
+    - id: 2
+      type: 2
+      amount: 250
+      time: 0
+    - id: 5
+      type: 1
+      amount: 1
+      time: 0
+    - id: 6
+      type: 1
+      amount: 1
+      time: 0
+    - id: 7
+      type: 1
+      amount: 1
+      time: 0
+    costValue: 1.99
+    limitBuyCount: 1
+    packIcon: {fileID: 0}
+    key: 2
+  - name: Mini Bundle
+    rewards:
+    - id: 2
+      type: 2
+      amount: 750
+      time: 0
+    - id: 5
+      type: 1
+      amount: 1
+      time: 0
+    - id: 6
+      type: 1
+      amount: 1
+      time: 0
+    - id: 7
+      type: 1
+      amount: 1
+      time: 0
+    costValue: 4.99
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 3
+  - name: Extra Bundle
+    rewards:
+    - id: 2
+      type: 2
+      amount: 1500
+      time: 0
+    - id: 4
+      type: 2
+      amount: 0
+      time: 3600
+    - id: 5
+      type: 1
+      amount: 2
+      time: 0
+    - id: 6
+      type: 1
+      amount: 2
+      time: 0
+    - id: 7
+      type: 1
+      amount: 2
+      time: 0
+    costValue: 9.99
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 4
+  - name: Pro Bundle
+    rewards:
+    - id: 2
+      type: 2
+      amount: 2500
+      time: 0
+    - id: 4
+      type: 2
+      amount: 0
+      time: 10800
+    - id: 5
+      type: 1
+      amount: 5
+      time: 0
+    - id: 6
+      type: 1
+      amount: 5
+      time: 0
+    - id: 7
+      type: 1
+      amount: 5
+      time: 0
+    costValue: 19.99
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 5
+  - name: Giant Bundle
+    rewards:
+    - id: 2
+      type: 2
+      amount: 4000
+      time: 0
+    - id: 4
+      type: 2
+      amount: 0
+      time: 21600
+    - id: 5
+      type: 1
+      amount: 10
+      time: 0
+    - id: 6
+      type: 1
+      amount: 10
+      time: 0
+    - id: 7
+      type: 1
+      amount: 10
+      time: 0
+    costValue: 22.99
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 6
+  - name: Legendary Bundle
+    rewards:
+    - id: 2
+      type: 2
+      amount: 10000
+      time: 0
+    - id: 4
+      type: 2
+      amount: 0
+      time: 43200
+    - id: 5
+      type: 1
+      amount: 25
+      time: 0
+    - id: 6
+      type: 1
+      amount: 25
+      time: 0
+    - id: 7
+      type: 1
+      amount: 25
+      time: 0
+    costValue: 22.99
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 7
+  - name: SafetyBundle
+    rewards:
+    - id: 2
+      type: 2
+      amount: 400
+      time: 0
+    - id: 5
+      type: 1
+      amount: 1
+      time: 0
+    - id: 6
+      type: 1
+      amount: 1
+      time: 0
+    - id: 7
+      type: 1
+      amount: 1
+      time: 0
+    costValue: 3.99
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 15
+  - name: No Ads
+    rewards:
+    - id: 0
+      type: 0
+      amount: 0
+      time: 0
+    costValue: 7.99
+    limitBuyCount: 1
+    packIcon: {fileID: 0}
+    key: 0
+  - name: No Ads 24h
+    rewards:
+    - id: 1
+      type: 0
+      amount: 0
+      time: 0
+    costValue: 1.19
+    limitBuyCount: 1
+    packIcon: {fileID: 0}
+    key: 1
+  - name: No Ads Just Fun
+    rewards:
+    - id: 0
+      type: 0
+      amount: 0
+      time: 0
+    - id: 2
+      type: 2
+      amount: 500
+      time: 0
+    - id: 5
+      type: 1
+      amount: 1
+      time: 0
+    - id: 6
+      type: 1
+      amount: 1
+      time: 0
+    - id: 7
+      type: 1
+      amount: 1
+      time: 0
+    costValue: 9.99
+    limitBuyCount: 1
+    packIcon: {fileID: 0}
+    key: 17
+  - name: Lives Offer
+    rewards:
+    - id: 4
+      type: 2
+      amount: 0
+      time: 3600
+    costValue: 1.19
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 14
+  - name: BoosterOffer
+    rewards:
+    - id: 2
+      type: 2
+      amount: 500
+      time: 0
+    - id: 5
+      type: 1
+      amount: 1
+      time: 0
+    - id: 6
+      type: 1
+      amount: 1
+      time: 0
+    - id: 7
+      type: 1
+      amount: 1
+      time: 0
+    costValue: 3.99
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 19
+  - name: Hard Level Offer
+    rewards:
+    - id: 2
+      type: 2
+      amount: 600
+      time: 0
+    - id: 5
+      type: 1
+      amount: 2
+      time: 0
+    - id: 6
+      type: 1
+      amount: 1
+      time: 0
+    - id: 7
+      type: 1
+      amount: 1
+      time: 0
+    costValue: 4.99
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 16
+  - name: Coin 250
+    rewards:
+    - id: 2
+      type: 2
+      amount: 250
+      time: 0
+    costValue: 1.99
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 8
+  - name: Coin 750
+    rewards:
+    - id: 2
+      type: 2
+      amount: 750
+      time: 0
+    costValue: 4.99
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 9
+  - name: Coin 1600
+    rewards:
+    - id: 2
+      type: 2
+      amount: 1600
+      time: 0
+    costValue: 9.99
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 10
+  - name: Coin 5000
+    rewards:
+    - id: 2
+      type: 2
+      amount: 5000
+      time: 0
+    costValue: 29.99
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 11
+  - name: Coin 12500
+    rewards:
+    - id: 2
+      type: 2
+      amount: 12500
+      time: 0
+    costValue: 49.99
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 12
+  - name: Coin 30000
+    rewards:
+    - id: 2
+      type: 2
+      amount: 30000
+      time: 0
+    costValue: 99.99
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 13
+  - name: Value Bundle
+    rewards:
+    - id: 2
+      type: 2
+      amount: 250
+      time: 0
+    - id: 1
+      type: 0
+      amount: 0
+      time: 0
+    costValue: 2.99
+    limitBuyCount: 1
+    packIcon: {fileID: 0}
+    key: 18
+  - name: Best Value Bundle
+    rewards:
+    - id: 2
+      type: 2
+      amount: 500
+      time: 0
+    - id: 4
+      type: 2
+      amount: 0
+      time: 3600
+    - id: 0
+      type: 0
+      amount: 0
+      time: 0
+    costValue: 9.99
+    limitBuyCount: 1
+    packIcon: {fileID: 0}
+    key: 20
+  - name: Exclusive Deal
+    rewards:
+    - id: 2
+      type: 2
+      amount: 1500
+      time: 0
+    - id: 4
+      type: 2
+      amount: 0
+      time: 3600
+    - id: 5
+      type: 1
+      amount: 3
+      time: 0
+    - id: 6
+      type: 1
+      amount: 3
+      time: 0
+    - id: 7
+      type: 1
+      amount: 3
+      time: 0
+    costValue: 9.99
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 21
+  - name: Weekend Sale
+    rewards:
+    - id: 2
+      type: 2
+      amount: 250
+      time: 0
+    - id: 4
+      type: 2
+      amount: 0
+      time: 3600
+    - id: 5
+      type: 1
+      amount: 1
+      time: 0
+    - id: 6
+      type: 1
+      amount: 1
+      time: 0
+    - id: 7
+      type: 1
+      amount: 1
+      time: 0
+    costValue: 1.99
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 22
+  - name: 1+1 Offer
+    rewards:
+    - id: 2
+      type: 2
+      amount: 2000
+      time: 0
+    - id: 4
+      type: 2
+      amount: 0
+      time: 7200
+    - id: 5
+      type: 1
+      amount: 2
+      time: 0
+    - id: 6
+      type: 1
+      amount: 2
+      time: 0
+    - id: 7
+      type: 1
+      amount: 2
+      time: 0
+    costValue: 9.99
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 23
+  - name: Standard Bundle
+    rewards:
+    - id: 2
+      type: 2
+      amount: 750
+      time: 0
+    - id: 5
+      type: 1
+      amount: 1
+      time: 0
+    - id: 6
+      type: 1
+      amount: 1
+      time: 0
+    - id: 7
+      type: 1
+      amount: 1
+      time: 0
+    costValue: 4.99
+    limitBuyCount: -1
+    packIcon: {fileID: 0}
+    key: 24

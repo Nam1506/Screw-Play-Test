@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d408766dfa11d469a247074d675b27, type: 3}
+  m_Name: ScrewAvailableSO
+  m_EditorClassIdentifier: 
+  screws:
+  - {fileID: 11400000, guid: a87ceed1b66515d44b60b67d37676a00, type: 2}
+  - {fileID: 11400000, guid: 752cf5abf87f35e458b11200fc591da3, type: 2}
+  - {fileID: 11400000, guid: dbfd6964189edd44da9e96569eb5d303, type: 2}
+  - {fileID: 11400000, guid: 0a6a8bbbf9ed7474d8ad339289794172, type: 2}
+  - {fileID: 11400000, guid: 8c1dc3ef5d3ffbd4bb3aa13307e6db79, type: 2}
+  - {fileID: 11400000, guid: bd40f4e598cb27c419ab1c459140c1d5, type: 2}
