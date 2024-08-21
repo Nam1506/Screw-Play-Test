@@ -3,6 +3,7 @@ using SFB;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -171,6 +172,20 @@ public class CheatManager : SingletonBase<CheatManager>
         }
     }
 
+    public void Set_Level(string levelStr)
+    {
+        int level;
+
+        if (int.TryParse(levelStr, out level))
+        {
+            playerData.saveLevelData.currentLevel = level;
+            playerData.saveLevelData.playCount = 0;
+            playerData.preLevel = playerData.nextLevel;
+
+            GameplayManager.Instance.StartLevel();
+        }
+    }
+
     public void Set_Coin()
     {
         int coin;
@@ -230,10 +245,33 @@ public class CheatManager : SingletonBase<CheatManager>
         bg.sprite = defaultBG;
     }
 
-    // Đặt độ phân giải tùy chọn
-    public int resolutionWidth = 1920;
-    public int resolutionHeight = 1080;
+    private IEnumerator capture;
+
     public void CaptureScreenshot()
+    {
+        capture = IECapture();
+        StartCoroutine(capture);
+    }
+
+    public void StopCapture()
+    {
+        if (capture != null)
+        {
+            StopCoroutine(capture);
+            capture = null;
+            Turn(true);
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            StopCapture();
+        }
+    }
+
+    private IEnumerator IECapture()
     {
         // Đường dẫn lưu ảnh
         string path = Path.Combine(Application.dataPath, "Screenshots");
@@ -245,11 +283,62 @@ public class CheatManager : SingletonBase<CheatManager>
         }
 
         // Đặt tên file với timestamp
-        string screenshotFilename = Path.Combine(path, $"screenshot_{System.DateTime.Now:yyyy-MM-dd_HH-mm-ss}.png");
 
         // Sử dụng ScreenCapture để chụp ảnh
-        ScreenCapture.CaptureScreenshot(screenshotFilename, 1); // scale 1 là độ phân giải gốc
-        Debug.Log("Screenshot saved to: " + screenshotFilename);
+
+        Turn(false);
+        yield return new WaitForEndOfFrame();
+
+        string folderPath = "Levels";
+
+        if (!Directory.Exists(path))
+        {
+            Directory.CreateDirectory(path);
+        }
+
+        PopupManager.Instance.ShowNotiAlert(folderPath);
+
+        string[] files = Directory.GetFiles(folderPath);
+
+        List<string> name = new();
+
+        foreach (string file in files)
+        {
+            if (Path.GetExtension(file).Equals(".meta", System.StringComparison.OrdinalIgnoreCase))
+                continue;
+
+            string fileNameWithoutExtensions = Path.GetFileNameWithoutExtension(file);
+
+            while (Path.GetExtension(fileNameWithoutExtensions).Length > 0)
+            {
+                fileNameWithoutExtensions = Path.GetFileNameWithoutExtension(fileNameWithoutExtensions);
+            }
+
+            // Add the cleaned file name to the list
+            name.Add(fileNameWithoutExtensions);
+        }
+
+
+        //foreach (var asset in files)
+        //{
+        //    if (Path.GetExtension(asset.name).Equals(".json", System.StringComparison.OrdinalIgnoreCase) || Path.GetExtension(asset.name).Equals(".txt", System.StringComparison.OrdinalIgnoreCase))
+        //        name.Add(asset.name);
+        //}
+
+        var sortedNumbers = name.OrderBy(n => int.Parse(n)).ToArray();
+
+        for (int i = 0; i < sortedNumbers.Length; i++)
+        {
+            Set_Level(sortedNumbers[i]);
+            yield return new WaitForSeconds(0.3f);
+            string screenshotFilename = Path.Combine(path, $"{DataManager.Instance.playerData.saveLevelData.currentLevel}.png");
+            ScreenCapture.CaptureScreenshot(screenshotFilename, 1); // scale 1 là độ phân giải gốc
+            yield return new WaitForEndOfFrame();
+        }
+
+        yield return new WaitForEndOfFrame();
+
+        StopCapture();
     }
 
     public (float, float, float) GetPhysicConfig()
@@ -261,7 +350,7 @@ public class CheatManager : SingletonBase<CheatManager>
     {
         return float.Parse(scaleScrewInput.text);
     }
-    
+
     public float GetOpacity()
     {
         return float.Parse(opacityInput.text);
