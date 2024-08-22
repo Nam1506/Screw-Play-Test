@@ -4,8 +4,14 @@
   "holeQueue": 0,
   "boxes": [
     {
-      "eColor": 4,
+      "eColor": 0,
       "holes": [
+        {
+          "eType": -1
+        },
+        {
+          "eType": -1
+        },
         {
           "eType": -1
         },
@@ -16,51 +22,105 @@
           "eType": -1
         }
       ]
+    },
+    {
+      "eColor": 0,
+      "holes": [
+        {
+          "eType": -1
+        }
+      ]
     }
   ],
   "shapes": [
     {
       "identify": 0,
-      "id": 16,
-      "eColorShape": 5,
-      "layer": 0,
+      "id": 1,
+      "eColorShape": 0,
+      "layer": 9,
       "worldPos": {
-        "x": 0.0,
+        "x": 0.157,
         "y": 0.0,
-        "z": 0.0
+        "z": -9.0
       },
       "localRotationZ": 0.0,
-      "localScaleX": 2.5,
-      "localScaleY": 2.5,
+      "localScaleX": 1.0,
+      "localScaleY": 1.0,
       "holes": [
         {
           "identify": 0,
           "eType": -1,
-          "eScrewColor": 4,
+          "eScrewColor": 0,
           "localPos": {
-            "x": 0.0,
-            "y": 0.65,
+            "x": -0.669,
+            "y": 1.101,
             "z": 0.0
           }
         },
         {
           "identify": 1,
           "eType": -1,
-          "eScrewColor": 4,
+          "eScrewColor": 0,
           "localPos": {
-            "x": -0.85,
-            "y": -0.65,
+            "x": 0.6689999,
+            "y": 0.944,
             "z": 0.0
           }
         },
         {
           "identify": 2,
           "eType": -1,
-          "eScrewColor": 4,
+          "eScrewColor": 0,
           "localPos": {
-            "x": 0.85,
-            "y": -0.65,
+            "x": -0.66899997,
+            "y": -1.18,
             "z": 0.0
+          }
+        },
+        {
+          "identify": 3,
+          "eType": -1,
+          "eScrewColor": 0,
+          "localPos": {
+            "x": 0.629,
+            "y": -1.259,
+            "z": 0.0
+          }
+        },
+        {
+          "identify": 4,
+          "eType": -1,
+          "eScrewColor": 0,
+          "localPos": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "identify": 1,
+      "id": 1,
+      "eColorShape": 0,
+      "layer": 9,
+      "worldPos": {
+        "x": -3.304,
+        "y": 3.854,
+        "z": -9.0
+      },
+      "localRotationZ": 0.0,
+      "localScaleX": 1.0,
+      "localScaleY": 1.0,
+      "holes": [
+        {
+          "identify": 5,
+          "eType": -1,
+          "eScrewColor": 0,
+          "localPos": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -1.0
           }
         }
       ]

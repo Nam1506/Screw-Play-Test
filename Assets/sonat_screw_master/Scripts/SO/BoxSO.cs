@@ -24,13 +24,13 @@ public class BoxSO : ScriptableObject
         }
         else
         {
-            return boxSprite.sprites[holeCount - 2];
+            return boxSprite.sprites[holeCount - 1];
         }
     }
 
     public Sprite GetGlassSprite(int holeCount)
     {
-        return glassSprites[holeCount - 2];
+        return glassSprites[holeCount - 1];
     }
 
     public Vector3 GetOffset()

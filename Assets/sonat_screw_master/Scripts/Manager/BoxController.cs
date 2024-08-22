@@ -32,7 +32,7 @@ public class BoxController : SingletonBase<BoxController>
 
     public void SetupBoxes()
     {
-        if (DataManager.Instance.playerData.saveLevelData.currentLevel > 1)
+        if (DataManager.Instance.playerData.saveLevelData.currentLevel >= 1)
         {
             boxDistance = CanvasManager.Instance.canvaIngame.GetComponent<RectTransform>().sizeDelta.x / 2f;
         }
@@ -44,6 +44,8 @@ public class BoxController : SingletonBase<BoxController>
             BoxData boxData = DataManager.Instance.levelData.boxes[i];
 
             Vector2 anchorPos;
+
+            Debug.Log("i: " + -boxDistance);
 
             anchorPos = new Vector2(-boxDistance * (i + 1), BOX_ANCHORPOS_Y);
 
