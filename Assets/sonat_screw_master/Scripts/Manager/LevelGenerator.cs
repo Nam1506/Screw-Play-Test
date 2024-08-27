@@ -33,7 +33,7 @@ public class LevelGenerator : SingletonBase<LevelGenerator>
         {
             ShapeData shapeData = DataManager.Instance.levelData.shapes[i];
 
-            Shape shape = InitShapeData(shapeData.identify, shapeData.layer, shapeData.eColorShape, shapeData.worldPos, shapeData.localRotationZ);
+            Shape shape = InitShapeData(shapeData.identify, shapeData.layer, shapeData.eColorShape, shapeData.worldPos.GetValue(), shapeData.localRotationZ);
 
             ShapeSO shapeVisual = shapeDataSO.GetShapeVisual(shapeData.id);
 
@@ -67,7 +67,7 @@ public class LevelGenerator : SingletonBase<LevelGenerator>
                 }
                 else
                 {
-                    Screw screw = InitScrew(shape, screwSprite.headSprite, screwSprite.tailSprite, color, type, shapeData.holes[j].localPos);
+                    Screw screw = InitScrew(shape, screwSprite.headSprite, screwSprite.tailSprite, color, type, shapeData.holes[j].localPos.GetValue());
 
                     shape.holes[j].screw = screw;
                     screw.hole = shape.holes[j];
@@ -116,7 +116,7 @@ public class LevelGenerator : SingletonBase<LevelGenerator>
 
             shapeHole.transform.SetParent(shape.transform);
 
-            shapeHole.localPosition = hole.localPos;
+            shapeHole.localPosition = hole.localPos.GetValue();
             shapeHole.SetLocalPositionZ(0);
 
             ShapeHole shapeHoleScript = shapeHole.GetComponent<ShapeHole>();

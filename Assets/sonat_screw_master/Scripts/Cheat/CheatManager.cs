@@ -1,10 +1,13 @@
 ﻿using DG.Tweening;
+using Newtonsoft.Json;
 using SFB;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -41,6 +44,8 @@ public class CheatManager : SingletonBase<CheatManager>
     public TMP_Text logicFirst;
 
     private int indexBG = 0;
+
+    public RecordScrew recordScrew = new();
 
     public enum EPlatForm
     {
@@ -381,5 +386,75 @@ public class CheatManager : SingletonBase<CheatManager>
     public bool IsLogicFirst()
     {
         return logicFirst.text == "On";
+    }
+
+    public bool isRecorded = false;
+
+    public void Record()
+    {
+        if (!GameplayManager.Instance.isWin && DataManager.Instance.curPath != null)
+        {
+            PopupManager.Instance.ShowNotiAlert("Must win to record");
+            return;
+        }
+
+        if (isRecorded)
+        {
+            PopupManager.Instance.ShowNotiAlert("Recorded Done");
+            return;
+        }
+
+        var levelData = DataManager.Instance.levelData;
+
+        foreach (var shape in levelData.shapes)
+        {
+            foreach (var hole in shape.holes)
+            {
+                hole.identify = recordScrew.datas[hole.identify];
+            }
+        }
+
+        foreach (var obstacle in levelData.obstacles)
+        {
+            for (int i = 0; i < obstacle.identifies.Count; i++)
+            {
+                obstacle.identifies[i] = recordScrew.datas[obstacle.identifies[i]];
+            }
+        }
+
+#if UNITY_EDITOR
+        File.WriteAllText(DataManager.Instance.curPath + ".json", JsonConvert.SerializeObject(levelData));
+        AssetDatabase.Refresh();
+#else
+        File.WriteAllText(DataManager.Instance.curPath, JsonConvert.SerializeObject(levelData));
+#endif
+
+        isRecorded = true;
+        PopupManager.Instance.ShowNotiAlert("Record Done: Level " + DataManager.Instance.playerData.saveLevelData.currentLevel);
+    }
+
+    public void ShowID()
+    {
+
+        foreach (var shape in GameplayManager.Instance.shapes)
+        {
+            shape.ShowIndentify();
+        }
+
+        foreach (var screw in GameplayManager.Instance.screws)
+        {
+            screw.ShowIndentify();
+        }
+    }
+}
+
+[Serializable]
+public class RecordScrew
+{
+    public Dictionary<int, int> datas = new();
+
+    public void Add(int screwID)
+    {
+        datas.Add(screwID, datas.Count);
     }
 }

@@ -94,7 +94,7 @@ public class Shape : MonoBehaviour
 
     public void ShowIndentify()
     {
-        displayIdentify.gameObject.SetActive(!displayIdentify.gameObject.activeSelf);
+        //displayIdentify.gameObject.SetActive(!displayIdentify.gameObject.activeSelf);
     }
 
     public void InitVisual(Sprite fill, Sprite shadow, Sprite fakeLight, Vector3 posShadow)

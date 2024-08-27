@@ -432,6 +432,8 @@ public class Screw : MonoBehaviour
         {
             GameplayManager.Instance.moveCount++;
 
+            CheatManager.Instance.recordScrew.Add(identify);
+
             CheckRemoveObstacles();
 
             GameplayManager.Instance.CheckObstacles(this);
@@ -442,11 +444,13 @@ public class Screw : MonoBehaviour
                 {
                     rope.bottomScrew.MoveSomeWhere(true);
                     rope.bottomScrew.CheckRemoveObstacles();
+                    CheatManager.Instance.recordScrew.Add(rope.bottomScrew.identify);
                 }
                 else if (rope.bottomScrew == this)
                 {
                     rope.topScrew.MoveSomeWhere(true);
                     rope.topScrew.CheckRemoveObstacles();
+                    CheatManager.Instance.recordScrew.Add(rope.topScrew.identify);
                 }
 
                 SoundManager.Instance.PlaySound(KeySound.Rope);
@@ -478,6 +482,7 @@ public class Screw : MonoBehaviour
 
     public bool MoveSomeWhere(bool isPulled = false)
     {
+
         this.isPulled = isPulled;
 
         bool success;

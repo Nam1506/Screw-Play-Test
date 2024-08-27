@@ -20,6 +20,8 @@ public class DataManager : SingletonBase<DataManager>
 
     private DateTime unlimitedTimeEnd;
 
+    public string curPath;
+
     public bool IsUnlimitedLives
     {
         get
@@ -99,9 +101,15 @@ public class DataManager : SingletonBase<DataManager>
 
         TextAsset textAsset = null;
 
+        curPath = null;
+
+        string filePath;
+
 #if UNITY_EDITOR
 
-        string filePath = LEVEL_FILE_PATH + level;
+        filePath = LEVEL_FILE_PATH + level;
+
+        curPath = Application.dataPath + "/Resources/" + filePath;
 
         textAsset = Resources.Load<TextAsset>(filePath);
 #else
@@ -111,10 +119,12 @@ public class DataManager : SingletonBase<DataManager>
 
         if (File.Exists(fileName))
         {
+            curPath = fileName;
             textAsset = new TextAsset(File.ReadAllText(fileName));
         }
         else if (File.Exists(fileName1))
         {
+            curPath = fileName1;
             textAsset = new TextAsset(File.ReadAllText(fileName1));
         }
 #endif
@@ -122,6 +132,7 @@ public class DataManager : SingletonBase<DataManager>
         if (textAsset == null)
         {
             PopupManager.Instance.ShowNotiAlert("Not have level: " + level);
+
 
             return false;
         }
@@ -615,7 +626,7 @@ public class HoleData
 
     public EScrewColor eScrewColor;
 
-    public Vector3 localPos;
+    public Vector3Serialized localPos;
 }
 
 [Serializable]
@@ -638,7 +649,7 @@ public class ShapeData
 
     public EColorShape eColorShape;
 
-    public Vector3 worldPos;
+    public Vector3Serialized worldPos;
 
     public List<HoleData> holes = new();
 }
@@ -668,4 +679,27 @@ public class ShopItemCollection
     public float price;
     public int levelUnlock;
     public Sprite icon;
+}
+
+[Serializable]
+public class Vector3Serialized
+{
+    public float x, y, z;
+
+    public Vector3Serialized(float x, float y, float z)
+    {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+    }
+
+    public Vector3Serialized()
+    {
+
+    }
+
+    public Vector3 GetValue()
+    {
+        return new Vector3(x, y, z);
+    }
 }

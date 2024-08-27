@@ -44,6 +44,9 @@ public class GameplayManager : SingletonBase<GameplayManager>
     {
         ResetData();
 
+        CheatManager.Instance.recordScrew = new();
+        CheatManager.Instance.isRecorded = false;
+
         DataManager.Instance.StartNewLevel();
 
         Debug.Log(DataManager.Instance.playerData.saveLevelData.currentLevel);
@@ -95,6 +98,8 @@ public class GameplayManager : SingletonBase<GameplayManager>
         IsLose = false;
 
         DespawnAllObjects();
+
+        isWin = false;
     }
 
     public void DespawnAllObjects()
@@ -633,6 +638,8 @@ public class GameplayManager : SingletonBase<GameplayManager>
         Win();
     }
 
+    public bool isWin = false;
+
     private void Win()
     {
         GameplayState = GameplayState.Pausing;
@@ -650,6 +657,8 @@ public class GameplayManager : SingletonBase<GameplayManager>
         }
 
         yield return new WaitForSeconds(0.3f);
+
+        isWin = true;
 
         PopupManager.Instance.ShowNotiAlert("Win");
 
