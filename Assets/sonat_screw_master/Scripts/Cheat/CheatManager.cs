@@ -57,6 +57,8 @@ public class CheatManager : SingletonBase<CheatManager>
 
     public PlayerData playerData => DataManager.Instance.playerData;
 
+    public TMP_Text folderPath;
+
     private void Awake()
     {
         toggleTurn.onValueChanged.AddListener((state) =>
@@ -444,6 +446,19 @@ public class CheatManager : SingletonBase<CheatManager>
         foreach (var screw in GameplayManager.Instance.screws)
         {
             screw.ShowIndentify();
+        }
+    }
+
+    public void SelectFolder()
+    {
+        // Mở hộp thoại chọn thư mục
+        var paths = StandaloneFileBrowser.OpenFolderPanel("Chọn thư mục", "", false);
+
+        // Kiểm tra nếu người dùng đã chọn một thư mục
+        if (paths.Length > 0)
+        {
+            folderPath.text = paths[0]; // Lưu đường dẫn vào biến
+            Debug.Log("Đường dẫn thư mục: " + folderPath);
         }
     }
 }

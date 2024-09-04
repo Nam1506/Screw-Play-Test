@@ -6022,7 +6022,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 312587639}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2119619238}
+        m_TargetAssemblyTypeName: CheatManager, Assembly-CSharp
+        m_MethodName: SelectFolder
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &312587639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32893,7 +32905,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: C://
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -32920,7 +32932,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -34701,6 +34713,7 @@ MonoBehaviour:
   opacityInput: {fileID: 614519561}
   logicFirst: {fileID: 738831382}
   curPlatform: 0
+  folderPath: {fileID: 2029508222}
   isRecorded: 0
 --- !u!1 &2123710311
 GameObject:

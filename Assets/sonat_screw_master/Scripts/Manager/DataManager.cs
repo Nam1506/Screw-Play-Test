@@ -7,7 +7,7 @@ using UnityEngine;
 public class DataManager : SingletonBase<DataManager>
 {
     private const string PLAYERDATA_KEY = "PlayerData";
-    private const string LEVEL_FILE_PATH = "Levels/";
+    private string LEVEL_FILE_PATH = "Levels/";
 
     public PlayerData playerData = new PlayerData();
     public LevelData levelData = new LevelData();
@@ -112,7 +112,12 @@ public class DataManager : SingletonBase<DataManager>
         curPath = Application.dataPath + "/Resources/" + filePath;
 
         textAsset = Resources.Load<TextAsset>(filePath);
+
 #else
+        if (CheatManager.Instance.folderPath != null)
+        {
+            LEVEL_FILE_PATH = CheatManager.Instance.folderPath.text;
+        }
 
         var fileName = $"{LEVEL_FILE_PATH}/{level}.json";
         var fileName1 = $"{LEVEL_FILE_PATH}/{level}.txt";
@@ -127,12 +132,13 @@ public class DataManager : SingletonBase<DataManager>
             curPath = fileName1;
             textAsset = new TextAsset(File.ReadAllText(fileName1));
         }
+
+        
 #endif
 
         if (textAsset == null)
         {
             PopupManager.Instance.ShowNotiAlert("Not have level: " + level);
-
 
             return false;
         }
