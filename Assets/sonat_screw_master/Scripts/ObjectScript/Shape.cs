@@ -44,6 +44,32 @@ public class Shape : MonoBehaviour
 
     public bool IsBroken => isBroken;
 
+    public bool FlipX
+    {
+        get
+        {
+            return fill.flipX;
+        }
+        set
+        {
+            fill.flipX = value;
+            fakeLight.flipX = value;
+        }
+    }
+
+    public bool FlipY
+    {
+        get
+        {
+            return fill.flipY;
+        }
+        set
+        {
+            fill.flipY = value;
+            fakeLight.flipY = value;
+        }
+    }
+
     //private void OnMouseDown()
     //{
     //    if (GameplayManager.Instance.GameplayState == GameplayState.Pausing) return;
@@ -249,7 +275,7 @@ public class Shape : MonoBehaviour
     private void ActiveVisual(bool isActive)
     {
         fill.gameObject.SetActive(isActive);
-        shadow.gameObject.SetActive(isActive);
+        //shadow.gameObject.SetActive(isActive);
         fakeLight.gameObject.SetActive(isActive);
     }
 

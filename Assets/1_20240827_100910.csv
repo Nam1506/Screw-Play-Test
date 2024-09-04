@@ -1,0 +1,7 @@
+id_screw, id_glass, id_glass_cover, id_glass_cover_full, Pos_X, Pos_y, color_id, ,id_glass, num_screw, layer, Pos_x, Pos_y, id_shape, rotation, num_screw_color, ,Layer Count, Glass count, Star, Ice, Boom, Gate, Rope, Chain, ,Tool_box_queue, color_id
+0,0,,,-0.512,-0.02949941,0,,0,5,9,0.157,-1.130499,1,0,1,,9,2,0,0,0,0,0,0,,5,0
+1,0,,,0.8259999,-0.1864994,0,,1,1,9,-3.304,2.723501,1,0,1,,,,,,,,,,,1,0
+2,0,,,-0.512,-2.310499,0,,,,,,,,,,,,,,,,,,,,,,
+3,0,,,0.786,-2.389499,0,,,,,,,,,,,,,,,,,,,,,,
+4,0,,,0.157,-1.130499,0,,,,,,,,,,,,,,,,,,,,,,
+5,1,,,-3.304,2.723501,0,,,,,,,,,,,,,,,,,,,,,,

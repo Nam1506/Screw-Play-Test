@@ -652,6 +652,9 @@ public class ShapeData
     public Vector3Serialized worldPos;
 
     public List<HoleData> holes = new();
+
+    public bool flipX;
+    public bool flipY;
 }
 
 [Serializable]
