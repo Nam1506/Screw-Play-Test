@@ -112,9 +112,11 @@ public class Shape : MonoBehaviour
             this.shadow.gameObject.SetActive(false);
         }
 
-        if (shadow != null)
+        if (fakeLight != null)
         {
             this.fakeLight.sprite = fakeLight;
+            this.fill.color = colorShapeSO.GetColorByEColorShape(eColorShape);
+            this.fill.SetAlpha(CheatManager.Instance.GetOpacity());
         }
         else
         {
@@ -123,10 +125,8 @@ public class Shape : MonoBehaviour
 
         this.shadow.transform.localPosition = posShadow;
 
-        this.fill.color = colorShapeSO.GetColorByEColorShape(eColorShape);
         this.shadow.color = colorShapeSO.GetColorByEColorShape(eColorShape);
         this.shadow.SetAlpha(0.2f);
-        this.fill.SetAlpha(CheatManager.Instance.GetOpacity());
 
         SetCollider();
 

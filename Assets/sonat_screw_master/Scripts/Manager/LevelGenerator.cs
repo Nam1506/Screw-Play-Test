@@ -192,7 +192,7 @@ public class LevelGenerator : SingletonBase<LevelGenerator>
         _bounds = CalculateEncapsulatedBounds(shapeParent.gameObject);
 
         var topLimit = topNeo.transform.position.y;
-        var botLimit = TutorialManager.Instance.IsLevelShowTut() ? botNeoTut.transform.position.y : botNeo.transform.position.y;
+        var botLimit = botNeo.transform.position.y;
         var rightLimit = rightNeo.transform.position.x;
         var leftLimit = leftNeo.transform.position.x;
 
@@ -241,7 +241,7 @@ public class LevelGenerator : SingletonBase<LevelGenerator>
 
         max /= ratio;
 
-        cam.orthographicSize = Mathf.Max(15, cam.orthographicSize + max);
+        cam.orthographicSize = cam.orthographicSize + max;
 
         shapeParent.transform.position *= cam.orthographicSize / sizeCam;
 

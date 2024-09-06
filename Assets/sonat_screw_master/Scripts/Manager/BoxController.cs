@@ -21,8 +21,6 @@ public class BoxController : SingletonBase<BoxController>
 
     private float boxDistance = Screen.width / 2f;
 
-    private const float BOX_ANCHORPOS_Y = -400f;
-
     public BoxAvailableSO BoxData => boxAvailableSO;
 
     public BoxSO GetCurSkin()
@@ -47,12 +45,12 @@ public class BoxController : SingletonBase<BoxController>
 
             Debug.Log("i: " + -boxDistance);
 
-            anchorPos = new Vector2(-boxDistance * (i + 1), BOX_ANCHORPOS_Y);
+            anchorPos = new Vector2(-boxDistance * (i + 1), CheatManager.Instance.posYBox);
 
             Box box = PoolBoss.Spawn(boxPrefab, Vector3.zero, Quaternion.identity, boxParent).GetComponent<Box>();
 
             box.rectTransform.anchoredPosition = anchorPos;
-            box.transform.localScale = Vector3.one * 1.2f;
+            box.transform.localScale = Vector3.one * CheatManager.Instance.scaleBox;
 
             box.Init(boxData.eColor, boxData.holes.Count);
 

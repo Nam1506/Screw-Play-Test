@@ -18,35 +18,35 @@ public class TutorialManager : SingletonBase<TutorialManager>
 
     public void CheckTutorial()
     {
-        screwTut = null;
-        isShowingTut = false;
+        //screwTut = null;
+        //isShowingTut = false;
 
-        int currentLevel = DataManager.Instance.playerData.saveLevelData.currentLevel;
+        //int currentLevel = DataManager.Instance.playerData.saveLevelData.currentLevel;
 
-        foreach (var obstacleData in obstacleSO.obstacles)
-        {
-            if (currentLevel == 1)
-            {
-                screwTut = FindScrew(EObstacleType.None);
-                tutText.text = "Collect screws <br> matching the toolbox color";
-                tutText.color = Helper.GetColorFromScrew(screwTut.color);
+        //foreach (var obstacleData in obstacleSO.obstacles)
+        //{
+        //    if (currentLevel == 1)
+        //    {
+        //        screwTut = FindScrew(EObstacleType.None);
+        //        tutText.text = "Collect screws <br> matching the toolbox color";
+        //        tutText.color = Helper.GetColorFromScrew(screwTut.color);
 
-                ShowTut();
-                return;
-            }
-            else if (currentLevel == obstacleData.levelUnlock + 1)
-            {
-                //screwTut = FindScrew(obstacleData.type);
-                //ShowTut();
+        //        ShowTut();
+        //        return;
+        //    }
+        //    else if (currentLevel == obstacleData.levelUnlock + 1)
+        //    {
+        //        //screwTut = FindScrew(obstacleData.type);
+        //        //ShowTut();
 
-                //PopupManager.Instance.ForceShowPopupActions.Add(() =>
-                //{
-                //    PopupManager.Instance.ShowUnlockObstacle(obstacleData.type);
-                //});
+        //        //PopupManager.Instance.ForceShowPopupActions.Add(() =>
+        //        //{
+        //        //    PopupManager.Instance.ShowUnlockObstacle(obstacleData.type);
+        //        //});
 
-                return;
-            }
-        }
+        //        return;
+        //    }
+        //}
 
         HideTut();
     }
@@ -68,11 +68,11 @@ public class TutorialManager : SingletonBase<TutorialManager>
 
     public void ShowTutLevel1()
     {
-        screwTut = FindScrew(EObstacleType.None);
-        tutText.text = "Collect screws <br> matching the toolbox color";
-        tutText.color = Helper.GetColorFromScrew(screwTut.color);
+        //screwTut = FindScrew(EObstacleType.None);
+        //tutText.text = "Collect screws <br> matching the toolbox color";
+        //tutText.color = Helper.GetColorFromScrew(screwTut.color);
 
-        ShowTut();
+        //ShowTut();
     }
 
     public bool IsLevelShowTut()

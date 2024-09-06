@@ -59,6 +59,9 @@ public class CheatManager : SingletonBase<CheatManager>
 
     public TMP_Text folderPath;
 
+    public float posYBox = -350f;
+    public float scaleBox = 1.2f;
+
     private void Awake()
     {
         toggleTurn.onValueChanged.AddListener((state) =>
