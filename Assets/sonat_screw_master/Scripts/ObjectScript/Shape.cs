@@ -102,8 +102,24 @@ public class Shape : MonoBehaviour
         ActiveVisual(true);
 
         this.fill.sprite = fill;
-        this.shadow.sprite = shadow;
-        this.fakeLight.sprite = fakeLight;
+
+        if (shadow != null)
+        {
+            this.shadow.sprite = shadow;
+        }
+        else
+        {
+            this.shadow.gameObject.SetActive(false);
+        }
+
+        if (shadow != null)
+        {
+            this.fakeLight.sprite = fakeLight;
+        }
+        else
+        {
+            this.fakeLight.gameObject.SetActive(false);
+        }
 
         this.shadow.transform.localPosition = posShadow;
 
