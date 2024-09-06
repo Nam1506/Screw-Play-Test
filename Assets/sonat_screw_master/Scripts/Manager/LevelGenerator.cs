@@ -49,8 +49,6 @@ public class LevelGenerator : SingletonBase<LevelGenerator>
 
                 shape.transform.SetLocalScaleX(shapeData.localScaleX);
                 shape.transform.SetLocalScaleY(shapeData.localScaleY);
-                shape.FlipX = shapeData.flipX;
-                shape.FlipY = shapeData.flipY;
             }
 
             InitShapeHoles(shape, shapeData.holes);
