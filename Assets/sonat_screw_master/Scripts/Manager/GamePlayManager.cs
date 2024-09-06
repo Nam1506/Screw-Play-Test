@@ -718,12 +718,8 @@ public class GameplayManager : SingletonBase<GameplayManager>
 
     private IEnumerator IeCheckObstaclesLose(List<Screw> inShapeScrews)
     {
-        Debug.Log("Shape: " + shapes.Count);
-
         foreach (Shape shape in shapes)
         {
-            Debug.Log("Shape: " + shapes.Count);
-
             if (shape.gameObject.activeInHierarchy)
             {
                 if (shape.IsEmpty())
