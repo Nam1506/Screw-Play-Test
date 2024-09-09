@@ -11,12 +11,22 @@ public class LevelGenerator : SingletonBase<LevelGenerator>
     [SerializeField] private Transform screwPrefab;
 
     [SerializeField] private ShapeDataSO shapeDataSO;
+    [SerializeField] private ShapeDataSO shapeDataSO_creative;
+    [SerializeField] private ShapeDataSO fullShapeData;
     [SerializeField] private ScrewAvailableSO screwAvailableSO;
 
     [Header("Parent")]
     [SerializeField] private Transform shapeParent;
 
     public ScrewAvailableSO ScrewData => screwAvailableSO;
+
+    private void Awake()
+    {
+        fullShapeData = ScriptableObject.CreateInstance<ShapeDataSO>();
+
+        fullShapeData.shapes.AddRange(shapeDataSO.shapes);
+        fullShapeData.shapes.AddRange(shapeDataSO_creative.shapes);
+    }
 
     public ScrewSO GetCurScrewSkin()
     {
@@ -35,7 +45,7 @@ public class LevelGenerator : SingletonBase<LevelGenerator>
 
             Shape shape = InitShapeData(shapeData.identify, shapeData.layer, shapeData.eColorShape, shapeData.worldPos.GetValue(), shapeData.localRotationZ);
 
-            ShapeSO shapeVisual = shapeDataSO.GetShapeVisual(shapeData.id);
+            ShapeSO shapeVisual = fullShapeData.GetShapeVisual(shapeData.id);
 
             if (shapeVisual == null)
             {

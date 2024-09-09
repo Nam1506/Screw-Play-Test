@@ -1968,6 +1968,8 @@ MonoBehaviour:
   holeBoxPrefab: {fileID: 5804885457234315117, guid: c78d74b2227a93e40a46631f398b3c2e, type: 3}
   screwPrefab: {fileID: 5567224311833876883, guid: 50c5ea0b9f2982c4d846cdd0e1b420bd, type: 3}
   shapeDataSO: {fileID: 11400000, guid: bd257a8c07cb6f84490075886a492e29, type: 2}
+  shapeDataSO_creative: {fileID: 11400000, guid: 68eabf4efa872044c8e7201a7c73dfff, type: 2}
+  fullShapeData: {fileID: 0}
   screwAvailableSO: {fileID: 11400000, guid: e5a7ecae7f349b14ca31626b2b024d18, type: 2}
   shapeParent: {fileID: 1396710691}
   topNeo: {fileID: 256506212}
@@ -11509,7 +11511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -370.09998, y: 33.33}
+  m_AnchoredPosition: {x: -370.1, y: 33.33}
   m_SizeDelta: {x: -887.03, y: -198.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &683648826
